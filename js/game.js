@@ -1,7 +1,6 @@
 // 响应键盘事件
 $(document).keydown(function(event) {
 	switch(event.keyCode) {
-		event.preventDefault();// 阻挡按键的默认操作，例如，按下"上方向键"时，滚动条不会向上
 		case 37: // left
 			/**moveLeft()
 			 * moveLeft()返回值是boolean类型，
@@ -122,6 +121,7 @@ document.addEventListener('touchend', function(event) {
 function isgameover() {
 	if(nospace(board) && nomove(board)) {
 		gameover();
+		
 	}
 }
 
