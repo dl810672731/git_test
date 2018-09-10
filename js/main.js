@@ -1,4 +1,4 @@
-var board = new Array();
+﻿var board = new Array();
 var score = 0;
 var HasConflicted = new Array(); // 这个二维数组记录每个位置的碰撞情况，是否有碰撞累加
 
@@ -61,6 +61,7 @@ function init() {
 	}
 	updateBoardView();
 	score = 0;
+	document.getElementById("score").innerHTML= score; // 将分数值重置为 0 
 }
 
 function updateBoardView() {
